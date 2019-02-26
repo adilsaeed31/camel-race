@@ -1,33 +1,54 @@
-.App {
-  text-align: center;
+.camel-container {
+	width: 100%;
+	height: 100%;
+}
+.camel-right-padding-0 {
+	padding-right: 0px !important;
+}
+.camel-burger {
+	width: 1rem;
+	height: 1rem;
+}
+.camel-header {
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.camel-note {
+	background-color: #ae3433;
+	padding: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.camel-body {
+	background-color: #45372d;
+	height: 100vh;
+	padding: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.camel-buttons {
+	padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.camel-btn {
+	background-color: #ae3433;
+	border-color: #ae3433;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.span-hr-line {
+	height: 1.5px;
+	border-radius: 1px;
+}
+.center-thick {
+	height: 5px !important;
+	margin-bottom: 2px;
+}
+.span-hr-last {
+	margin-top: 4px;
+}
+
+.is-margin-top-10-m {
+	margin-top: -10px;
+}
+.burger {
+	display: block;
 }
