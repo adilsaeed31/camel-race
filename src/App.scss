@@ -1,0 +1,145 @@
+@charset "utf-8";
+// Import Bulma core
+@import '../node_modules/bulma/bulma.sass';
+// Import Extensions
+@import '../node_modules/bulma-extensions/bulma-accordion/src/sass/index';
+// Import Font Awesome
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+// Load Custom Fonts
+@font-face {
+	font-family: DroidKufi;
+	src: url('/fonts/DroidKufi-Regular_1.ttf');
+}
+@font-face {
+	font-family: DroidKufi-Bold;
+	src: url('/fonts/DroidKufi-Bold_1.ttf');
+}
+
+// Set Roboto and DroidKufi Arabic Fonts
+body {
+	font-family: 'Roboto', 'DroidKufi', 'DroidKufi-Bold';
+}
+
+// Camel Race CSS start from here.
+
+.camel-container {
+	width: 100%;
+}
+
+.camel-right-padding-0 {
+	padding-right: 0px !important;
+}
+
+.camel-burger {
+	width: 1rem;
+	height: 1rem;
+}
+
+.camel-header {
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.camel-note {
+	background-color: #bb2025;
+	padding: 20px;
+}
+
+.camel-body {
+	background-color: #493a2f;
+	padding: 0px 0px 10px 0px;
+}
+
+.camel-buttons {
+	padding: 20px;
+}
+
+.camel-btn {
+	background-color: #bb2025;
+	border-color: #bb2025;
+}
+
+.span-hr-line {
+	height: 1.5px;
+	border-radius: 1px;
+}
+.center-thick {
+	height: 5px !important;
+	margin-bottom: 2px;
+}
+.span-hr-last {
+	margin-top: 4px;
+}
+
+.burger {
+	display: block;
+}
+
+.camel-font-3 {
+	font-size: 1em;
+	font-family: DroidKufi-Bold;
+}
+
+.camel-listing {
+	color: #000;
+	padding: 20px;
+	margin-bottom: 20px;
+	clear: both;
+}
+
+.camel-headings {
+	color: #fff;
+}
+
+.camel-table {
+	background-color: #fff3b0;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.is-top-border {
+	border-top: 1px solid #e7ddae;
+}
+
+.is-top-border-thick {
+	border-top: 1px solid #7a755c;
+}
+
+.camel-table-body {
+	background-color: #f4eab8;
+}
+
+.camel-accordion {
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	direction: rtl;
+}
+
+.accordions .accordion .accordion-header {
+	background-color: #493a2f;
+}
+
+.accordions .accordion .accordion-header .toggle::before {
+	content: '\f077';
+}
+
+.accordions .accordion.is-active .accordion-header .toggle::before {
+	content: '\f078';
+}
+
+.accordion-title {
+	text-align: right;
+	flex: 1;
+}
+
+.camel-chevron-font-margin {
+	font-size: 11px;
+	margin-right: 5px;
+}
+
+.accordions .accordion .accordion-header + .accordion-body {
+	background-color: #fff3b0;
+	border: none;
+}
