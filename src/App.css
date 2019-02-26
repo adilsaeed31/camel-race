@@ -15,12 +15,13 @@
 	padding: 10px;
 }
 .camel-note {
-	background-color: #ae3433;
+	background-color: #bb2025;
 	padding: 20px;
+	font-size: 1.5em;
 }
 
 .camel-body {
-	background-color: #45372d;
+	background-color: #493a2f;
 	height: 100vh;
 	padding: 0px;
 }
@@ -30,8 +31,8 @@
 }
 
 .camel-btn {
-	background-color: #ae3433;
-	border-color: #ae3433;
+	background-color: #bb2025;
+	border-color: #bb2025;
 }
 
 .span-hr-line {
@@ -46,9 +47,21 @@
 	margin-top: 4px;
 }
 
-.is-margin-top-10-m {
-	margin-top: -10px;
-}
 .burger {
 	display: block;
+}
+
+.camel-font-3 {
+	font-size: 1.5em;
+}
+
+.camel-listing {
+	color: #000;
+}
+.camel-headings {
+	color: #fff;
+}
+.camel-table {
+	background-color: palegoldenrod;
+	border-radius: 10px;
 }
