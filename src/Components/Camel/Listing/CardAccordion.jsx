@@ -6,13 +6,13 @@ export default function CardAccordion(props) {
 		<article className="accordion">
 			<div className="accordion-header toggle">
 				<p className="accordion-title">{props.eventName}</p>
-				<p>{props.points}</p>
+				<p className="has-text-weight-bold">{props.points}</p>
 				<i
 					className="fas fa-chevron-down toggle camel-chevron-font-margin"
 					aria-label="toggle"
 				/>
 			</div>
-			<div className="accordion-body">
+			<div className="accordion-body" style={{ backgroundColor: props.color }}>
 				<div className="accordion-content">
 					<div className="columns is-mobile">
 						<div className="column has-text-weight-bold">{Lang.date}</div>
