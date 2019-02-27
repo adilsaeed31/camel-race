@@ -48,6 +48,7 @@ body {
 .camel-body {
 	background-color: #493a2f;
 	padding: 0px 0px 10px 0px;
+	min-height: 100vh;
 }
 
 .camel-buttons {
@@ -89,6 +90,7 @@ body {
 
 .camel-headings {
 	color: #fff;
+	padding-bottom: 5px;
 }
 
 .camel-card {
@@ -160,4 +162,10 @@ body {
 
 .accordions .accordion .accordion-header + .accordion-body {
 	background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+	.is-size-8-mobile {
+		font-size: 0.6rem !important;
+	}
 }

@@ -7,7 +7,7 @@ export default function Listing(props) {
 		<section className="section camel-listing">
 			<Heading />
 			{props.data.map((item, key) => (
-				<Card key={key} {...item} />
+				<Card key={key} {...item} index={key} />
 			))}
 		</section>
 	)

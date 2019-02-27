@@ -2,7 +2,6 @@ import React from 'react'
 import Lang from '../../../Lang/arabic.json'
 
 export default function CardBodyRow(props) {
-	console.log(props.position, 'position')
 	return (
 		<div className="columns is-mobile is-marginless is-top-border-thick">
 			<div className="column is-2">{props.category1}</div>

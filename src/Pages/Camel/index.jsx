@@ -1,8 +1,32 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import Listing from '../../Components/Camel/Listing'
+import ACTIONS from '../../Store/Actions'
 
-export default class Camel extends Component {
+class Camel extends Component {
+	componentDidMount() {
+		this.props.getList(require('../../data.json'))
+	}
 	render() {
-		return <Listing data={require('../../data.json')} />
+		let { lists } = this.props
+
+		if (lists.length > 0) {
+			return <Listing data={lists} />
+		}
+
+		return <i className="fas fa-2x fa-spinner fa-pulse" />
 	}
 }
+
+const mapStateToProps = state => ({
+	lists: state.lists
+})
+
+const mapDispatchToProps = dispatch => ({
+	getList: lists => dispatch(ACTIONS.getList(lists))
+})
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Camel)

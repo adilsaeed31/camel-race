@@ -7,11 +7,17 @@ import bulmaAccordion from 'bulma-extensions/bulma-accordion/dist/js/bulma-accor
 
 export default function Card(props) {
 	// get vars from props with destruction way
-	let { total, rows, ranks, color } = props
+	let { total, rows, ranks, color, index } = props
 	// Using hooks here to set state
-	const [click, setClick] = useState(false)
+	const [click, setClick] = useState(false) // handle click
+	const [first, setFirst] = useState(false) // handle first record to open always
 	// Using hooks useEffect to rerender dom after state update
 	useEffect(() => {
+		// to keep open first record condition
+		if (index === 0 && !first) {
+			setClick(true)
+			setFirst(true)
+		}
 		if (click) {
 			bulmaAccordion.attach()
 		}
