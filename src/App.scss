@@ -17,7 +17,7 @@
 
 // Set Roboto and DroidKufi Arabic Fonts
 body {
-	font-family: 'Roboto', 'DroidKufi', 'DroidKufi-Bold';
+	font-family: 'DroidKufi', 'DroidKufi-Bold';
 }
 
 // Camel Race CSS start from here.
@@ -48,6 +48,7 @@ body {
 .camel-body {
 	background-color: #493a2f;
 	padding: 0px 0px 10px 0px;
+	min-height: 100vh;
 }
 
 .camel-buttons {
@@ -89,12 +90,17 @@ body {
 
 .camel-headings {
 	color: #fff;
+	padding-bottom: 5px;
 }
 
-.camel-table {
+.camel-card {
 	background-color: #fff3b0;
-	border-radius: 10px;
-	margin-top: 10px;
+	border-radius: 15px;
+	margin-top: 5px;
+}
+
+.camel-card-header {
+	cursor: pointer;
 }
 
 .is-top-border {
@@ -105,7 +111,7 @@ body {
 	border-top: 1px solid #7a755c;
 }
 
-.camel-table-body {
+.camel-card-body {
 	background-color: #f4eab8;
 }
 
@@ -119,6 +125,11 @@ body {
 
 .accordions .accordion .accordion-header {
 	background-color: #493a2f;
+	border-radius: 15px;
+}
+
+.accordions .accordion:not(:first-child) .accordion-header {
+	border-radius: 15px;
 }
 
 .accordions .accordion .accordion-header .toggle::before {
@@ -142,4 +153,19 @@ body {
 .accordions .accordion .accordion-header + .accordion-body {
 	background-color: #fff3b0;
 	border: none;
+}
+
+.accordions .accordion {
+	padding-bottom: 8px;
+	background-color: transparent;
+}
+
+.accordions .accordion .accordion-header + .accordion-body {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+	.is-size-8-mobile {
+		font-size: 0.6rem !important;
+	}
 }
