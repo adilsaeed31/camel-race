@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  web:
+    build:
+      context: ./
+      target: production
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      API_URL: localhost:8000
+    stdin_open: true
+    tty: true

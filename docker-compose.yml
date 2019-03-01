@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  frontend:
+    build:
+      context: .
+      target: development
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app/client 
+    environment:
+      NODE_ENV: development
+      API_URL: localhost:8000
+    stdin_open: true
+    tty: true
+
