@@ -7,7 +7,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - .:/usr/src/app/client 
+      - .:/usr/src/app/client
     environment:
       NODE_ENV: development
       API_URL: localhost:8000
