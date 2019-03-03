@@ -111,6 +111,10 @@ body {
 	border-top: 1px solid #7a755c;
 }
 
+.is-bottom-border-thick {
+	border-bottom: 1px solid #7a755c;
+}
+
 .camel-card-body {
 	background-color: #f4eab8;
 }
@@ -164,8 +168,15 @@ body {
 	background-color: transparent;
 }
 
+.accordion-video-canvas {
+	margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
 	.is-size-8-mobile {
 		font-size: 0.6rem !important;
+	}
+	.is-size-9-mobile {
+		font-size: 0.95rem !important;
 	}
 }

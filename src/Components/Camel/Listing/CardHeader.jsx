@@ -10,7 +10,13 @@ export default function CardHeader(props) {
 			<div className="column is-2">{props.code}</div>
 			<div className="column is-3 is-size-8-mobile">{props.name}</div>
 			<div className="column is-2">{props.position}</div>
-			<div className="column is-2">&nbsp;</div>
+			<div className="column is-2">
+				<img
+					src={`/images/camel${props.position >= 3 ? 3 : props.position}.png`}
+					width="30"
+					alt="Position Icon"
+				/>
+			</div>
 		</header>
 	)
 }

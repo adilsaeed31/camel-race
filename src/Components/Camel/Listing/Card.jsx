@@ -7,7 +7,7 @@ import bulmaAccordion from 'bulma-extensions/bulma-accordion/dist/js/bulma-accor
 
 export default function Card(props) {
 	// get vars from props with destruction way
-	let { total, rows, ranks, color, index } = props
+	let { name, totalPoints, code, position, events, ranks, color, index } = props
 	// Using hooks here to set state
 	const [click, setClick] = useState(false) // handle click
 	const [first, setFirst] = useState(false) // handle first record to open always
@@ -27,16 +27,16 @@ export default function Card(props) {
 		<section className="camel-card" style={{ backgroundColor: color }}>
 			<CardHeader
 				onClick={() => setClick(!click)}
-				name={total.name}
-				totalPoints={total.totalPoints}
-				code={total.code}
-				position={total.position}
+				name={name}
+				totalPoints={totalPoints}
+				code={code}
+				position={position}
 			/>
 			{click && (
 				<Fragment>
 					<CardBody ranks={ranks} />
 
-					<CardFooter events={rows} />
+					<CardFooter events={events} />
 				</Fragment>
 			)}
 		</section>

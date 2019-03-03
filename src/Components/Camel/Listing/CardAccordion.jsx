@@ -20,9 +20,17 @@ export default function CardAccordion(props) {
 						<div className="column has-text-weight-bold">{Lang.position}</div>
 					</div>
 					<div className="columns is-mobile">
-						<div className="column">{props.date}</div>
+						<div className="column is-size-9-mobile">{props.date}</div>
 						<div className="column">{props.rounds}</div>
-						<div className="column">{props.position}</div>
+						<div className="column">
+							{props.position}
+							<img
+								src="/images/camel-trophy.png"
+								width="10"
+								style={{ marginRight: '5px' }}
+								alt="Position Icon"
+							/>
+						</div>
 					</div>
 					<div className="columns is-mobile">
 						<div className="column has-text-weight-bold">{Lang.points}</div>
@@ -33,6 +41,21 @@ export default function CardAccordion(props) {
 						<div className="column">{props.points}</div>
 						<div className="column">{props.time}</div>
 						<div className="column">{props.age}</div>
+					</div>
+
+					<div className="accordion-video-heading">
+						<div className="columns is-mobile">
+							<div className="column is-full has-text-right is-bottom-border-thick has-text-weight-bold">
+								{Lang.video_text}
+							</div>
+						</div>
+					</div>
+					<div className="accordion-video-canvas">
+						<div className="columns is-mobile">
+							<div className="column is-full has-text-right">
+								<img width="100" src="/images/snapshot.png" alt="Video Link" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
